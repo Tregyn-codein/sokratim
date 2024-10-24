@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto p-4 pt-6 content-center max-w-4xl">
+  <div class="container mx-auto h-screen -mt-[84px] p-4 pt-6 content-center max-w-4xl">
     <h1 class="text-[14rem] font-bold ">
       <span class="text-amber-600">4</span>0<span class="text-amber-600">4</span>
     </h1>

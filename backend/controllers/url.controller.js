@@ -67,26 +67,3 @@ exports.redirectToUrl = (req, res) => {
 
     });
 }
-// // Проверяем, свободно ли имя
-// async function checkNameAvailability(name) {
-//     const result = await db.query('SELECT COUNT(*) as count FROM urls WHERE shortened_name = ?', [name]);
-//     return result[0][0].count === 0;
-// }
-//
-// // Создаём сокращённую ссылку
-// async function createShortenedUrl(originalUrl, shortenedName, userId) {
-//     let name = shortenedName;
-//     if (!name) {
-//         // Генерируем случайное имя, если не указано
-//         do {
-//             name = Math.random().toString(36).substring(2, 8);
-//         } while (!(await checkNameAvailability(name))); // Убеждаемся, что имя не занято
-//     }
-//
-//     // Вставляем в базу данных
-//     await db.query('INSERT INTO urls (original_url, shortened_name, user_id) VALUES (?, ?, ?)', [originalUrl, name, userId]);
-//
-//     // Возвращаем полный URL
-//     return `https://localhost:4000/${name}`;
-// }
-
