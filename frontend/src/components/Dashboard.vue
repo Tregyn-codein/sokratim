@@ -8,8 +8,8 @@
 
     <table v-if="urls.length > 0" class="container mx-auto max-w-xl">
       <thead class="">
-      <tr class="border-b-2 border-gray-400 bg-gray-200">
-        <th class="rounded-tl-xl">Имя</th>
+      <tr class="border-b-2 border-gray-400 bg-gray-200 px-3">
+        <th class="rounded-tl-xl px-3">Имя</th>
         <th>Оригнальная ссылка</th>
         <th>Дата создания</th>
         <th>Кол-во кликов</th>
